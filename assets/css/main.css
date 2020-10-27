@@ -82,20 +82,25 @@ nav img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 70vh;
-    width: 100%;
+    height: 50vh;
   }
 
   .texto {
     display: flex;
     flex-flow: column wrap;
-    align-content: flex-end;
-    justify-content: flex-end;
-    width: 410px;
+    align-content: center;
+    justify-content: center;
+    padding-left: 15px;
+    width: 90%;
     height: 200px;
   }
   .texto h1 {
+    font-size: 30px;
+    font-weight: 700;
     padding-bottom: 10px;
+  }
+  .texto p {
+    font-size: 11px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -104,8 +109,7 @@ nav img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 70vh;
-    width: 100%;
+    height: 60vh;
   }
 
   .texto {
@@ -113,8 +117,15 @@ nav img {
     flex-flow: column wrap;
     align-content: flex-end;
     justify-content: flex-end;
-    width: 420px;
-    height: 200px;
+    width: 480px;
+    height: 160px;
+  }
+  .texto h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .texto p {
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -124,7 +135,6 @@ nav img {
     background-size: contain;
     background-position: center;
     height: 70vh;
-    width: 100%;
   }
 
   .texto {
@@ -132,8 +142,15 @@ nav img {
     flex-flow: column wrap;
     align-content: flex-end;
     justify-content: flex-end;
-    width: 430px;
+    width: 610px;
     height: 200px;
+  }
+  .texto h1 {
+    padding-bottom: 10px;
+    font-size: 50px;
+  }
+  .texto p {
+    font-size: 25px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -143,7 +160,6 @@ nav img {
     background-size: contain;
     background-position: center;
     height: 100vh;
-    width: 100%;
   }
 
   .texto {
@@ -151,8 +167,15 @@ nav img {
     flex-flow: column wrap;
     align-content: flex-end;
     justify-content: flex-end;
-    width: 440px;
-    height: 200px;
+    width: 720px;
+    height: 250px;
+  }
+  .texto h1 {
+    padding-bottom: 10px;
+    font-size: 60px;
+  }
+  .texto p {
+    font-size: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -161,8 +184,7 @@ nav img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100vh;
-    width: 100%;
+    height: 90vh;
   }
 
   .texto {
@@ -170,58 +192,92 @@ nav img {
     flex-flow: column wrap;
     align-content: flex-end;
     justify-content: flex-end;
-    width: 460px;
-    height: 200px;
+    width: 740px;
+    height: 250px;
+  }
+  .texto h1 {
+    padding-bottom: 10px;
+    font-size: 60px;
+  }
+  .texto p {
+    font-size: 25px;
   }
 }
-.grid-container-grafico {
-  display: grid;
-  grid-template-columns: auto auto;
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
 }
 
-.grid-item {
-  padding: 20px;
-  text-align: center;
+.titulografi {
+  font-size: 30px;
+  padding-bottom: 50px;
 }
 
-.item1 {
-  grid-column: 1/span 2;
+.contenedoGraf {
+  display: flex;
+  flex-flow: row wrap;
 }
-
-.item2 {
-  grid-row: 1/span 1;
-  grid-row: 3;
-  margin-left: auto;
+.contenedoGraf .textoGrafico {
+  margin-left: 60px;
 }
-
-.item3 {
-  grid-row: 1/span 2;
-  grid-row: 3;
-  margin-right: auto;
-}
-.item3 h1 {
+.contenedoGraf .textoGrafico h1 {
+  font-size: 30px;
   padding-bottom: 10px;
+}
+.contenedoGraf .textoGrafico p {
+  font-size: 15px;
+}
+.contenedoGraf .grafico {
+  text-align: center;
 }
 
 .fondoprecios {
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 
-.texto {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-end;
-  justify-content: flex-end;
-  width: 410px;
-  height: 200px;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 400px;
+  grid-gap: 10px;
+  padding: 10px;
+  align-content: center;
+  height: 100%;
+  width: 100%;
 }
-.texto h1 {
-  padding-bottom: 10px;
+.grid-container h1 {
+  top: 50px;
+  font-size: 40px;
+  color: white;
+  grid-column: 1/span 4;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 2/span 1;
+}
+
+.item2 {
+  grid-column: 3/span 1;
 }
 
 /*# sourceMappingURL=main.css.map */
