@@ -1,11 +1,13 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
+    // barra de navegacion
     .navegacion__barra{
         ul li{
             display: none;
         }
     }
 
+    // header
     .header{
         background-image: url('../img/bg-hero.svg');
         background-repeat: no-repeat;
@@ -31,18 +33,102 @@
         p{
             font-size: 11px;
         }
-    }
+    }  
 
+    // seccion precios
+    .fondoprecios{
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 160vh;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 450px;
+        grid-gap: 20px 80px; //separacion entre columnnas
+        padding-bottom: 50px;
+        align-content: flex-end;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    
+        .titulob{
+            text-shadow: 2px 2px black;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+    }
+    .grid-container > div {
+        background-color: white;
+        text-align: center;
+        padding: 30px 30px;
+        font-size: 30px;
+        border-radius: 25px;
+        width: 300px;
+        
+        h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        h1{
+            text-align: left;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        li{
+            text-align: left;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        input{
+            margin-top: 20px; 
+            width: 100%;
+            padding: 10px 0;
+            border: 0 solid;
+            background-color: #2ab7ca;
+            color: white;
+        }
+        input:hover{
+            background-color: #77d1dd;
+            border: 0px;
+        }    
+        input:focus{
+            background-color: #8f9199;
+            border: 0px;
+        }
+    }         
+    .item1{    
+        .paddingli{
+            margin-top: 20px;
+            margin-bottom: 150px;
+        }
+    }        
+    .item2{
+        .paddingli2{
+            margin-top: 20px;
+            margin-bottom: 45px;
+        }   
+    }
+    .item1:hover, .item2:hover{
+        box-shadow: 8px 8px 9px 0 black;
+        // box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    // barra de navegacion
     .navegacion__barra{
         ul li{
             display: none;
         }
     }
 
+    // header
     .header{
         background-image: url('../img/bg-hero.svg');
         background-repeat: no-repeat;
@@ -68,17 +154,102 @@
         }
     }
 
+    // seccion precios
+    .fondoprecios{
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 160vh;
+    }
+    .grid-container {
+        display: grid;
+        // grid-template-columns: auto ;
+        grid-template-rows: 100px 450px;
+        grid-gap: 20px 80px; //separacion entre columnnas
+        padding-bottom: 50px;
+        align-content: flex-end;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    
+        .titulob{
+            text-shadow: 2px 2px black;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+    }
+    .grid-container > div {
+        background-color: white;
+        text-align: center;
+        padding: 30px 30px;
+        font-size: 30px;
+        border-radius: 25px;
+        width: 300px;
+        
+        h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        h1{
+            text-align: left;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        li{
+            text-align: left;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        input{
+            margin-top: 20px; 
+            width: 100%;
+            padding: 10px 0;
+            border: 0 solid;
+            background-color: #2ab7ca;
+            color: white;
+        }
+        input:hover{
+            background-color: #77d1dd;
+            border: 0px;
+        }    
+        input:focus{
+            background-color: #8f9199;
+            border: 0px;
+        }
+    }         
+    .item1{    
+        .paddingli{
+            margin-top: 20px;
+            margin-bottom: 150px;
+        }
+    }        
+    .item2{
+        .paddingli2{
+            margin-top: 20px;
+            margin-bottom: 45px;
+        }   
+    }
+    .item1:hover, .item2:hover{
+        box-shadow: 8px 8px 9px 0 black;
+        // box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
+    }
     
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+    // barra de navegacion
     .navegacion__barra{
         #icono{
             display: $none;
         }
     }
 
+    // header
     .header{
         background-image: url('../img/bg-hero.svg');
         background-repeat: no-repeat;
@@ -103,16 +274,112 @@
             font-size: 20px;
         }
     }
+
+    // seccion precios
+    .fondoprecios{
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 450px;
+        grid-gap: 0 80px; //separacion entre columnnas
+        padding-bottom: 100px;
+        color: black;
+        align-content: flex-end;
+        justify-content: center;
+        height: 100%;
+    
+        .titulob{
+            font-size: 40px;
+            color: white;
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+    }
+      
+    .grid-container > div {
+        background-color: white;
+        text-align: center;
+        padding: 30px 30px;
+        font-size: 30px;
+        border-radius: 25px;
+        width: 300px;
+    
+        h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        h1{
+            text-align: left;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        li{
+            text-align: left;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        
+        input{
+            margin-top: 20px; 
+            width: 100%;
+            padding: 10px 0;
+            border: 0 solid;
+            background-color: #2ab7ca;
+            color: white;
+        }
+        input:hover{
+            background-color: #77d1dd;
+            border: 0px;
+        }
+        
+        input:focus{
+            background-color: #8f9199;
+            border: 0px;
+        }
+    
+    } 
+    
+    .item1{
+        grid-column: 2 / span 1;
+        .paddingli{
+            margin-top: 20px;
+            margin-bottom: 150px;
+        }
+    }
+    
+    .item2{
+        grid-column: 3 / span 1;    
+        .paddingli2{
+            margin-top: 20px;
+            margin-bottom: 45px;
+        }
+        
+    }
+    
+    .item1:hover, .item2:hover{
+        box-shadow: 8px 8px 9px 0 black;
+        // box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    // barra de navegacion
     .navegacion__barra{
         #icono{
             display: $none;
         }
     }
 
+    // header
     .header{
         background-image: url('../img/bg-hero.svg');
         background-repeat: no-repeat;
@@ -138,6 +405,100 @@
             font-size: 20px;
         }
     }
+
+    // seccion precios
+    .fondoprecios{
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 450px;
+        grid-gap: 0 80px; //separacion entre columnnas
+        padding-bottom: 100px;
+        color: black;
+        align-content: flex-end;
+        justify-content: center;
+        height: 100%;
+    
+        .titulob{
+            font-size: 40px;
+            color: white;
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+    }
+      
+    .grid-container > div {
+        background-color: white;
+        text-align: center;
+        padding: 30px 30px;
+        font-size: 30px;
+        border-radius: 25px;
+        width: 300px;
+    
+        h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        h1{
+            text-align: left;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        li{
+            text-align: left;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        
+        input{
+            margin-top: 20px; 
+            width: 100%;
+            padding: 10px 0;
+            border: 0 solid;
+            background-color: #2ab7ca;
+            color: white;
+        }
+        input:hover{
+            background-color: #77d1dd;
+            border: 0px;
+        }
+        
+        input:focus{
+            background-color: #8f9199;
+            border: 0px;
+        }
+    
+    } 
+    
+    .item1{
+        grid-column: 2 / span 1;
+        .paddingli{
+            margin-top: 20px;
+            margin-bottom: 150px;
+        }
+    }
+    
+    .item2{
+        grid-column: 3 / span 1;    
+        .paddingli2{
+            margin-top: 20px;
+            margin-bottom: 45px;
+        }
+        
+    }
+    
+    .item1:hover, .item2:hover{
+        box-shadow: 8px 8px 9px 0 black;
+        // box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -148,7 +509,7 @@
         }
     }
 
-
+    // header
     .header{
         background-image: url('../img/bg-hero.svg');
         background-repeat: no-repeat;
@@ -173,5 +534,99 @@
         p{
             font-size: 20px;
         }
+    }
+
+    // seccion precios
+    .fondoprecios{
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 450px;
+        grid-gap: 0 80px; //separacion entre columnnas
+        padding-bottom: 100px;
+        color: black;
+        align-content: flex-end;
+        justify-content: center;
+        height: 100%;
+    
+        .titulob{
+            font-size: 40px;
+            color: white;
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+    }
+      
+    .grid-container > div {
+        background-color: white;
+        text-align: center;
+        padding: 30px 30px;
+        font-size: 30px;
+        border-radius: 25px;
+        width: 300px;
+    
+        h2{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        h1{
+            text-align: left;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        li{
+            text-align: left;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        
+        input{
+            margin-top: 20px; 
+            width: 100%;
+            padding: 10px 0;
+            border: 0 solid;
+            background-color: #2ab7ca;
+            color: white;
+        }
+        input:hover{
+            background-color: #77d1dd;
+            border: 0px;
+        }
+        
+        input:focus{
+            background-color: #8f9199;
+            border: 0px;
+        }
+    
+    } 
+    
+    .item1{
+        grid-column: 2 / span 1;
+        .paddingli{
+            margin-top: 20px;
+            margin-bottom: 150px;
+        }
+    }
+    
+    .item2{
+        grid-column: 3 / span 1;    
+        .paddingli2{
+            margin-top: 20px;
+            margin-bottom: 45px;
+        }
+        
+    }
+    
+    .item1:hover, .item2:hover{
+        box-shadow: 8px 8px 9px 0 black;
+        // box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
     }
 }
