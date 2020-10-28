@@ -4,46 +4,116 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100%;
+    // width: 100%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 100px 400px;
-    grid-gap: 10px; //separacion entre columnnas
-    padding: 10px;
-    align-content: center;
+    grid-template-columns: auto ;
+    grid-template-rows: 100px 450px;
+    grid-gap: 0 80px; //separacion entre columnnas
+    padding-bottom: 100px;
+    color: black;
+    align-content: flex-end;
+    justify-content: center;
     height: 100%;
     width: 100%;
 
-    h1{
-        top: 50px;
+    .titulob{
+        text-shadow: 2px 2px black;
         font-size: 40px;
         color: white;
         grid-column: 1 / span 4;
         text-align: center;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
     }
-  }
+}
   
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 30px;
     font-size: 30px;
 } 
 
 .item1{
+    border-radius: 25px;
+    box-shadow: 8px 8px 9px 0 black;
+    width: 300px;
     grid-column: 2 / span 1;
+    h2{
+        text-align: left;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    h1{
+        text-align: left;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    li{
+        text-align: left;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    .paddingli{
+        margin-top: 20px;
+        margin-bottom: 150px;
+    }
+    input{
+        margin-top: 20px; 
+        width: 100%;
+        padding: 10px 0;
+        border: 0 solid;
+        background-color: #2ab7ca;
+        color: white;
+    }
 }
 
 .item2{
+    border-radius: 25px;
+    box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
+    width: 300px;
     grid-column: 3 / span 1;
+    h2{
+        text-align: left;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    h1{
+        text-align: left;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    li{
+        text-align: left;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    .paddingli2{
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+    input{
+        margin-top: 20px; 
+        width: 100%;
+        padding: 10px 0;
+        border: 0 solid;
+        background-color: #2ab7ca;
+        color: white;
+    }
 }
 
 
+input:hover{
+    background-color: #77d1dd;
+    border: 0px;
+}
+
+input:focus{
+    background-color: #8f9199;
+    border: 0px;
+}
 
 

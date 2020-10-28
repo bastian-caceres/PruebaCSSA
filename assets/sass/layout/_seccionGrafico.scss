@@ -1,12 +1,9 @@
 .flex-container {
-    // border: 1px solid black;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
     align-items: center;
     color: black;
-  }
+}
   
 .titulografi{
     font-size: 30px;
@@ -16,9 +13,10 @@
 .contenedoGraf{
     display: flex;
     flex-flow: row wrap;
-    // padding: 20px;
+    justify-content: center;
+    align-content: center;
     .textoGrafico{
-        margin-left: 60px;
+        margin: 20px;
         h1{
             font-size: 30px;
             padding-bottom: 10px;
@@ -29,5 +27,6 @@
     }
     .grafico{
         text-align: center;
+        padding-bottom: 30px;
     }
 }
