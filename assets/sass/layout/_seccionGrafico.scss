@@ -25,8 +25,32 @@
             font-size: 15px;
         }
     }
+
     .grafico{
         text-align: center;
         padding-bottom: 30px;
+
+        .a-bar, .b-bar, .c-bar{
+            animation: example 5s cubic-bezier(1, 0, 0, 1) infinite;
+        }
+        .d-bar, .e-bar, .f-bar{
+            animation: example2 5s cubic-bezier(1, 0, 0, 1) infinite;
+        }
     }
+
+    @keyframes example {
+        0%   {}
+        25%  {fill: #EE9480; top:10px;}
+        50%  {fill: #2AB7CA; left:0px;}
+        75%  {fill: #2AB7CA; left:0px;}
+        100% {fill: red; left:0px;}
+    }
+    @keyframes example2 {
+        0%   {fill: #2AB7CA; left:0px;}
+        25%  {fill: #2AB7CA; left:0px;}
+        50%  {fill: #EE9480; left:100px;}
+        75%  {fill: #EE9480; left:100px;}
+        100% {fill: red; left:0px;}
+    }
+
 }

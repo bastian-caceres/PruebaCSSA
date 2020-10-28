@@ -20,7 +20,6 @@
     width: 100%;
 
     .titulob{
-        text-shadow: 2px 2px black;
         font-size: 40px;
         color: white;
         grid-column: 1 / span 4;
@@ -37,7 +36,6 @@
 
 .item1{
     border-radius: 25px;
-    box-shadow: 8px 8px 9px 0 black;
     width: 300px;
     grid-column: 2 / span 1;
     h2{
@@ -72,7 +70,7 @@
 
 .item2{
     border-radius: 25px;
-    box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
+    // box-shadow: 8px 8px 9px 0 black; //1.-borde derecho 2.-borde abajo 3.-sombra borde completo 4.-borde completo
     width: 300px;
     grid-column: 3 / span 1;
     h2{
@@ -114,6 +112,10 @@ input:hover{
 input:focus{
     background-color: #8f9199;
     border: 0px;
+}
+
+.item1:hover, .item2:hover{
+    box-shadow: 8px 8px 9px 0 black;
 }
 
 

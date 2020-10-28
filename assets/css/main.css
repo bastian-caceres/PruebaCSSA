@@ -235,6 +235,52 @@ body {
   text-align: center;
   padding-bottom: 30px;
 }
+.contenedoGraf .grafico .a-bar, .contenedoGraf .grafico .b-bar, .contenedoGraf .grafico .c-bar {
+  animation: example 5s cubic-bezier(1, 0, 0, 1) infinite;
+}
+.contenedoGraf .grafico .d-bar, .contenedoGraf .grafico .e-bar, .contenedoGraf .grafico .f-bar {
+  animation: example2 5s cubic-bezier(1, 0, 0, 1) infinite;
+}
+@keyframes example {
+  25% {
+    fill: #EE9480;
+    top: 10px;
+  }
+  50% {
+    fill: #2AB7CA;
+    left: 0px;
+  }
+  75% {
+    fill: #2AB7CA;
+    left: 0px;
+  }
+  100% {
+    fill: red;
+    left: 0px;
+  }
+}
+@keyframes example2 {
+  0% {
+    fill: #2AB7CA;
+    left: 0px;
+  }
+  25% {
+    fill: #2AB7CA;
+    left: 0px;
+  }
+  50% {
+    fill: #EE9480;
+    left: 100px;
+  }
+  75% {
+    fill: #EE9480;
+    left: 100px;
+  }
+  100% {
+    fill: red;
+    left: 0px;
+  }
+}
 
 .fondoprecios {
   background-image: url("../img/bg-price.svg");
@@ -257,7 +303,6 @@ body {
   width: 100%;
 }
 .grid-container .titulob {
-  text-shadow: 2px 2px black;
   font-size: 40px;
   color: white;
   grid-column: 1/span 4;
@@ -273,7 +318,6 @@ body {
 
 .item1 {
   border-radius: 25px;
-  box-shadow: 8px 8px 9px 0 black;
   width: 300px;
   grid-column: 2/span 1;
 }
@@ -308,7 +352,6 @@ body {
 
 .item2 {
   border-radius: 25px;
-  box-shadow: 8px 8px 9px 0 black;
   width: 300px;
   grid-column: 3/span 1;
 }
@@ -351,6 +394,10 @@ input:focus {
   border: 0px;
 }
 
+.item1:hover, .item2:hover {
+  box-shadow: 8px 8px 9px 0 black;
+}
+
 .Barra__Footer {
   background-color: #221d23;
   padding: 20px 40px;
@@ -370,6 +417,7 @@ input:focus {
   list-style: none;
 }
 .Barra__Footer__item {
+  margin: 0 10px;
   font-size: 16px;
   font-weight: 600;
 }
