@@ -1,0 +1,59 @@
+.barra1{
+    animation: barra1 3s ease infinite alternate;
+}
+@keyframes barra1 {
+    25% { y: 170px; fill: #f98866;}
+    50% { fill: #ff420e; }
+    75% { fill: #80bd9e; }
+    100% { fill: #90da59;}
+}
+
+.barra2{
+    animation: barra2 3s linear infinite alternate;
+}
+@keyframes barra2 {
+    25% { y: 170px; fill: #f98866;}
+    50% { fill: #ff420e; }
+    75% { fill: #80bd9e; }
+    100% { fill: #90da59;}
+}
+
+.barra3{
+    animation: barra3 4s linear infinite alternate;
+}
+@keyframes barra3 {
+    25% { y: 170px; fill: #f98866;}
+    50% { fill: #ff420e; }
+    75% { fill: #80bd9e; }
+    100% { fill: #90da59;}
+}
+
+.barra4{
+    animation: barra4 4s linear infinite alternate;
+}
+@keyframes barra4 {
+    25% { y: 170px; fill: #f98866;}
+    50% { fill: #ff420e; }
+    75% { fill: #80bd9e; }
+    100% { fill: #90da59;}
+}
+
+.barra5{
+    animation: barra5 3s linear infinite alternate;
+}
+@keyframes barra5 {
+    25% { y: 170px; fill: #f98866;}
+    50% { fill: #ff420e; }
+    75% { fill: #80bd9e; }
+    100% { fill: #90da59;}
+}
+
+.barra6{
+    animation: barra6 2s linear infinite alternate;
+}
+@keyframes barra6 {
+    25% { y: 170px; fill: #f98866;}
+    50% { fill: #ff420e; }
+    75% { fill: #80bd9e; }
+    100% { fill: #90da59;}
+}

@@ -14,6 +14,120 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.barra1 {
+  animation: barra1 3s ease infinite alternate;
+}
+
+@keyframes barra1 {
+  25% {
+    y: 170px;
+    fill: #f98866;
+  }
+  50% {
+    fill: #ff420e;
+  }
+  75% {
+    fill: #80bd9e;
+  }
+  100% {
+    fill: #90da59;
+  }
+}
+.barra2 {
+  animation: barra2 3s linear infinite alternate;
+}
+
+@keyframes barra2 {
+  25% {
+    y: 170px;
+    fill: #f98866;
+  }
+  50% {
+    fill: #ff420e;
+  }
+  75% {
+    fill: #80bd9e;
+  }
+  100% {
+    fill: #90da59;
+  }
+}
+.barra3 {
+  animation: barra3 4s linear infinite alternate;
+}
+
+@keyframes barra3 {
+  25% {
+    y: 170px;
+    fill: #f98866;
+  }
+  50% {
+    fill: #ff420e;
+  }
+  75% {
+    fill: #80bd9e;
+  }
+  100% {
+    fill: #90da59;
+  }
+}
+.barra4 {
+  animation: barra4 4s linear infinite alternate;
+}
+
+@keyframes barra4 {
+  25% {
+    y: 170px;
+    fill: #f98866;
+  }
+  50% {
+    fill: #ff420e;
+  }
+  75% {
+    fill: #80bd9e;
+  }
+  100% {
+    fill: #90da59;
+  }
+}
+.barra5 {
+  animation: barra5 3s linear infinite alternate;
+}
+
+@keyframes barra5 {
+  25% {
+    y: 170px;
+    fill: #f98866;
+  }
+  50% {
+    fill: #ff420e;
+  }
+  75% {
+    fill: #80bd9e;
+  }
+  100% {
+    fill: #90da59;
+  }
+}
+.barra6 {
+  animation: barra6 2s linear infinite alternate;
+}
+
+@keyframes barra6 {
+  25% {
+    y: 170px;
+    fill: #f98866;
+  }
+  50% {
+    fill: #ff420e;
+  }
+  75% {
+    fill: #80bd9e;
+  }
+  100% {
+    fill: #90da59;
+  }
+}
 .navegacion__barra {
   list-style: none;
   display: flex;
@@ -84,42 +198,21 @@ body {
 .contenedoGraf .textoGrafico p {
   font-size: 15px;
 }
-.contenedoGraf .grafico {
-  text-align: center;
-  padding-bottom: 30px;
-}
-.contenedoGraf .grafico .a-bar, .contenedoGraf .grafico .b-bar, .contenedoGraf .grafico .c-bar {
-  animation: example 5s cubic-bezier(1, 0, 0, 1) infinite;
-}
-.contenedoGraf .grafico .d-bar, .contenedoGraf .grafico .e-bar, .contenedoGraf .grafico .f-bar {
-  animation: example2 5s cubic-bezier(1, 0, 0, 1) infinite;
-}
 
-.Barra__Footer {
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #221d23;
-  padding: 20px 40px;
-  height: 50%;
+  justify-content: space-around;
+  align-items: flex-end;
   color: white;
-  list-style: none;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  padding: 20px 10%;
+  height: 50px;
   align-items: center;
-  justify-content: start;
 }
-.Barra__Footer__lista {
-  display: flex;
-  flex-grow: 1;
-  list-style: none;
-}
-.Barra__Footer__item {
-  margin: 0 10px;
-  font-size: 16px;
-  font-weight: 600;
-}
-.Barra__Footer .ml {
-  margin-left: auto;
+footer .legal p {
+  display: inline-block;
+  padding: 0 5px;
 }
 
 @media (max-width: 575.98px) {
@@ -169,7 +262,6 @@ body {
     align-content: flex-end;
     justify-content: center;
     height: 100%;
-    width: 100%;
   }
   .grid-container .titulob {
     text-shadow: 2px 2px black;
@@ -278,7 +370,6 @@ body {
     align-content: flex-end;
     justify-content: center;
     height: 100%;
-    width: 100%;
   }
   .grid-container .titulob {
     text-shadow: 2px 2px black;
