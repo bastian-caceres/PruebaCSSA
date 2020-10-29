@@ -189,6 +189,7 @@ body {
   align-content: center;
 }
 .contenedoGraf .textoGrafico {
+  text-align: center;
   margin: 20px;
 }
 .contenedoGraf .textoGrafico h1 {
@@ -251,7 +252,7 @@ footer .legal p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 160vh;
+    height: 170vh;
   }
 
   .grid-container {
